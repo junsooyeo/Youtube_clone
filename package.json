@@ -1,0 +1,29 @@
+{
+  "name": "youtube_clone",
+  "version": "1.0.0",
+  "description": "building youtube clone using node.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junsooyeo/Youtube_clone.git"
+  },
+  "author": "Junsoo Yeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junsooyeo/Youtube_clone/issues"
+  },
+  "homepage": "https://github.com/junsooyeo/Youtube_clone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7",
+    "prettier": "2.3.0"
+  }
+}
