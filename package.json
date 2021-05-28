@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "building youtube clone using node.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/start.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   "homepage": "https://github.com/junsooyeo/Youtube_clone#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
