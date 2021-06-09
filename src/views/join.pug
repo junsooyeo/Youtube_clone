@@ -1,0 +1,19 @@
+extends base
+
+block content 
+    if errorMsg 
+        span=errorMsg
+    form(method="POST")
+        input(name="name", requried, type="text", placeholder= "Name")
+        input(name="email", requried, type="email", placeholder = "Email")
+        input(name="username", requried, type="text", placeholder = "Username")
+        input(name="password", requried, type="password", placeholder = "Password")
+        input(name="password2", requried, type="password", placeholder = "Confirm Password")
+        input(name="location", requried, type="text", placeholder = "Location")
+        input(type = "submit", value= "Create Account")
+
+    hr
+    div
+        span Already have an account?
+        div
+            a(href="/login") Log in now &rarr;
