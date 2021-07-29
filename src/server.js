@@ -25,6 +25,8 @@ app.use(
 );
 
 app.use(localMiddlewares);
+app.use("/uploads", express.static("uploads")); //export "uploads" folder to the browser
+app.use("/assets", express.static("assets"));
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);

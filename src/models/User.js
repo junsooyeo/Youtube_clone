@@ -10,12 +10,12 @@ const userSchema = new mongoose.Schema({
 	username: { type: String, required: true },
 	password: { type: String },
 	location: String,
+	videos: [{ type: mongoose.Schema.Types.ObjectId, ref: "video" }],
 });
 
 userSchema.pre("save", async function () {
-	console.log("before", this.password);
-	this.password = await bcrypt.hash(this.password, saltRounds);
-	console.log("after", this.password);
+	if (this.isModified("password"))
+		this.password = await bcrypt.hash(this.password, saltRounds);
 });
 
 const User = mongoose.model("User", userSchema);
